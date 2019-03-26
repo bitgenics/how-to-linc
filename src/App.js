@@ -5,6 +5,8 @@ import config from './config'
 
 class App extends Component {
   render() {
+    console.log({ config })
+    console.log({ color: config.BG_COLOR })
     return (
       <div
         style={{
