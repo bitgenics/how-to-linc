@@ -1,11 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
+import config from './config'
 
 class App extends Component {
   render() {
+    console.log({ config })
+    console.log({ color: config.BG_COLOR })
     return (
-      <div className="App">
+      <div
+        style={{
+          backgroundColor: config.BG_COLOR,
+        }}
+        className="App"
+      >
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -21,8 +29,8 @@ class App extends Component {
           </a>
         </header>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
